@@ -13,6 +13,7 @@ void mostrarMenu() {
     cout << "6. Redimir Puntos electrodomesticos\n";
     cout << "7. Redimir Puntos mercado\n";
     cout << "8. Eliminar Clientes\n";
+    cout << "9. Salir\n";
     cout << "========================\n";
     cout << "Ingrese el número de la opción deseada: ";
 }
