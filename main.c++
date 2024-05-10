@@ -48,7 +48,7 @@ int main(){
             case 5: comprarTextil(); break;
             case 6: comprarElectrodomestico(); break;
             case 7: comprarMercado(); break;
-            case 8: eliminarClientes() break;
+            case 8: eliminarClientes(); break;
             
             case 9:
                 cout<<"Saliendo...\n\n";
