@@ -38,60 +38,19 @@ int main(){
     int opcion;
 
     do {
-        system("cls");
-        mostrarMenu();
-        cin >> opcion;
-
+        opcion = mostrarMenu();
+        
         switch (opcion) {
-            case 1:
-                system("cls");
-                cout<<"Ha elegido la opción 1.\n\n";
-                system("pause");
-                break;
-
-            case 2:
-                system("cls");
-                cout<<"Ha elegido la opción 2.\n\n";
-                system("pause");
-                break;
-
-            case 3:
-                system("cls");
-                cout<<"Ha elegido la opción 3.\n\n";
-                system("pause");
-                break;
-            case 4:
-                system("cls");
-                cout<<"Ha elegido la opción 4.\n\n	";
-                system("pause");
-                break;
-
-            case 5:
-                system("cls");
-                cout<<"Ha elegido la opción 5.\n\n";
-                system("pause");
-                break;
-
-            case 6:
-                system("cls");
-                cout<<"Ha elegido la opción 6.\n\n";
-                system("pause");
-                break;
-
-            case 7:
-                system("cls");
-                cout<<"Ha elegido la opción 7.\n\n";
-                system("pause");
-                break;
-
-            case 8:
-                system("cls");
-                cout<<"Ha elegido la opción 8.\n\n";
-                system("pause");
-                break;
-
+            case 1: registrarCliente(); break;
+            case 2: ingresarPuntos(); break;
+            case 3: consultarPuntos(); break;     
+            case 4: consultarClientes(); break;
+            case 5: comprarTextil(); break;
+            case 6: comprarElectrodomestico(); break;
+            case 7: comprarMercado(); break;
+            case 8: eliminarClientes() break;
+            
             case 9:
-                system("cls");
                 cout<<"Saliendo...\n\n";
                 system("pause");
                 break;
@@ -101,6 +60,8 @@ int main(){
                 system("pause");
                 break;
         }
+    } while (opcion != 9);
+}
     } while (opcion != 9);
 }
 
