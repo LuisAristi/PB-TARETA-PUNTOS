@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <locale>
-#include <windows.h>
+//#include <windows.h>
 
 using namespace std;
 
@@ -96,6 +96,7 @@ void consultarPuntos(struct Cliente cliente[], int n) {
             cout << "\nIdentificación no encontrada...\n";
             break;
         }
+    }
 }
 
 void listarClientes(struct Cliente cliente[], int n){
