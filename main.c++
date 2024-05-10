@@ -1,7 +1,4 @@
-#include <iostream>
 #include <windows.h>
-#include <locale>
-
 #include "cliente.h"
 
 using namespace std; 
@@ -10,7 +7,7 @@ int main(){
     setlocale(LC_ALL, "spanish");
 
     //Ventana de presentación.
-    cout << "BIENVENIDO A NUESTRO SOFTWARE, ESTE PROGRAMA HA SIDO DESARROLLADO POR:" << endl; Sleep(1000);
+    cout << "BIENVENIDO A NUESTRO SOFTWARE, ESTE PROGRAMA HA SIDO DESARROLLADO POR:" << endl; sleep(1000);
     cout << "\nJulian Rojas: 0222320040        Eduardo Tuñon: 0222320052        Luis Aristizaval: \nEstudiantes de Ingenieria de sistemas.\n\n" << endl;
 
     cout << "Este programa imita el manejo de un sistema de puntos acumulables por cada compra en un almacen.\n" << endl;
@@ -49,11 +46,11 @@ int main(){
             case 1: registrarCliente(cliente, n); break;
             case 2: ingresarPuntos(cliente, n); break;
             case 3: consultarPuntos(cliente, n); break;     
-            case 4: listarClientes(cliente, n); break;
-            case 5: comprarTextil(cliente, n); break;
-            case 6: comprarElectrodomestico(cliente, n); break;
-            case 7: comprarMercado(cliente, n); break;
-            case 8: eliminarClientes(cliente, n); break;
+            case 4: //listarClientes(cliente, n); break;
+            case 5: //comprarTextil(cliente, n); break;
+            case 6: //comprarElectrodomestico(cliente, n); break;
+            case 7: //comprarMercado(cliente, n); break;
+            case 8: //eliminarClientes(cliente, n); break;
             case 9: cout << "\nSaliendo...\n\n"; break;
             default: cout << "\nOpción invalida...\n\n"; break;
         }

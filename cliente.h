@@ -1,4 +1,6 @@
 #include <iostream>
+#include <unistd.h>
+#include <locale>
 #include <windows.h>
 
 using namespace std;
@@ -50,7 +52,7 @@ void registrarCliente(struct Cliente cliente[], int n) {
             break;
         }
 
-        cout << "Nombre: "; fflush(stdin); gets(cliente[i].nombre);
+        cout << "Nombre: "; fflush(stdin); fgets(cliente[i].nombre, 100, stdin);
         cout << "Dirección: "; cin >> cliente[i].telefono;
         cout << "Número de contacto: "; cin >> cliente[i].telefono;
         //Función incompleta, faltan los datos: puntos vigentes, puntos redimidos, fecha ultima redención puntos, fecha últimos puntos asignados.
@@ -96,22 +98,22 @@ void consultarPuntos(struct Cliente cliente[], int n) {
         }
 }
 
-void listarClientes(struct Cliente cliente[], int n) {
-
+void listarClientes(struct Cliente cliente[], int n){
+    cout<<"hola";
 }
 
 void comprarTextil(struct Cliente cliente[], int n) {
-
+    cout<<"hola";
 }
 
 void comprarElectrodomestico(struct Cliente cliente[], int n) {
-
+    cout<<"hola";
 }
 
 void comprarMercado(struct Cliente cliente[], int n) {
-
+    cout<<"hola";
 }
 
 void eliminarClientes(struct Cliente cliente[], int n) {
-
+    cout<<"hola";
 }
