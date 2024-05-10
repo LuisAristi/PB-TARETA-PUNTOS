@@ -1,4 +1,3 @@
-#include <windows.h>
 #include "cliente.h"
 
 using namespace std; 
