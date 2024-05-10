@@ -52,14 +52,13 @@ int main(){
             
             case 9:
                 cout<<"Saliendo...\n\n";
-                system("pause");
                 break;
 
             default:
                 cout<<"\nOpción invalida...\n\n";
-                system("pause");
                 break;
         }
+        system("pause");
     } while (opcion != 9);
 }
     } while (opcion != 9);
