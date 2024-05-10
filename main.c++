@@ -3,7 +3,6 @@
 #include <locale>
 
 #include "cliente.h"
-#include "tecnico.h"
 
 using namespace std; 
 
@@ -34,22 +33,28 @@ int main(){
     cout << "\n    5. Eliminar Clientes: Al ingresar el documento de identificación de un cliente se debe\n    eliminar el registro correspondiente a ese cliente.\n\n";
 
     system("pause");
-
+    system("cls");
+    
+    int n;
+    cout << "Ingrese la cantidad de clientes: "; cin >> n;
+    
+    Cliente cliente[n];
+    
     int opcion;
 
     do {
         opcion = mostrarMenu();
         
         switch (opcion) {
-            case 1: registrarCliente(); break;
-            case 2: ingresarPuntos(); break;
-            case 3: consultarPuntos(); break;     
-            case 4: consultarClientes(); break;
-            case 5: comprarTextil(); break;
-            case 6: comprarElectrodomestico(); break;
-            case 7: comprarMercado(); break;
-            case 8: eliminarClientes(); break;
-            case 9: cout << "Saliendo...\n\n"; break;
+            case 1: registrarCliente(cliente, n); break;
+            case 2: ingresarPuntos(cliente, n); break;
+            case 3: consultarPuntos(cliente, n); break;     
+            case 4: listarClientes(cliente, n); break;
+            case 5: comprarTextil(cliente, n); break;
+            case 6: comprarElectrodomestico(cliente, n); break;
+            case 7: comprarMercado(cliente, n); break;
+            case 8: eliminarClientes(cliente, n); break;
+            case 9: cout << "\nSaliendo...\n\n"; break;
             default: cout << "\nOpción invalida...\n\n"; break;
         }
         system("pause");
