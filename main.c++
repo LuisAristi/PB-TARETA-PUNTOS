@@ -49,8 +49,8 @@ int main(){
             case 6: comprarElectrodomestico(); break;
             case 7: comprarMercado(); break;
             case 8: eliminarClientes(); break;
-            case 9: cout<<"Saliendo...\n\n"; break;
-            default: cout<<"\nOpción invalida...\n\n"; break;
+            case 9: cout << "Saliendo...\n\n"; break;
+            default: cout << "\nOpción invalida...\n\n"; break;
         }
         system("pause");
     } while (opcion != 9);
